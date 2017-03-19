@@ -39,7 +39,7 @@ public:
 	return tanggalPengadaan;
 	}
 };
-int teknologi(){
+void teknologi(){
 	//kategoriTeknologi
 	perpustakaan tek1;
 	perpustakaan tek2;
@@ -155,7 +155,6 @@ cout<<"7. ID Buku :"<<tek7.getidBuku()<<endl
 	<<"   Pengarang :"<<tek7.getPengarang()<<endl
 	<<"   Tahun Terbit :"<<tek7.gettahunTerbit()<<endl
 	<<"   Tanggal Pengadaan :"<<tek7.gettanggalPengadaan()<<endl;
-return 0;
 }
 int main(){
 	int pilihan;
@@ -165,14 +164,14 @@ int main(){
 	cout<<"1. Teknologi\n"<<"2. Sejarah\n"<<"3. Agama\n";
 	cout<<"Masukkan pilihan :\n":
 	cin>>pilihan;
-	if(pilihan=1){
-	cout<<teknologi();
+	if(pilihan == 1){
+	teknologi();
 	}
-	else if(pilihan=2){
-	cout<<sejarah();
+	else if(pilihan == 2){
+	sejarah();
 	}
 	else {
-	cout<<agama();
+	agama();
 	}
 return 0;
 }
